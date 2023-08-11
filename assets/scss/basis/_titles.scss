@@ -1,0 +1,19 @@
+.title {
+  color: $black-color;
+  font-size: 35px;
+  font-weight: 500;
+  &--fz50 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  &--fz35 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  &--fz25 {
+    font-size: 25px;
+  }
+  &--fz18 {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,28 @@
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 45px;
+  border-radius: 50px;
+  border: 1px solid $red-color;
+  color: $red-color;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: $white-color;
+  cursor: pointer;
+  transition: .4s all linear;
+  &:hover {
+    background-color: $red-color;
+    color: $white-color;
+  }
+  &--shadow {
+    z-index: 9;
+    &:after {
+      transition: .4s all linear;
+      @include btn-shadow;
+    }
+  }
+}

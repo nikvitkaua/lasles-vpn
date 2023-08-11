@@ -1,0 +1,49 @@
+.header {
+  padding: 45px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    max-width: 149px;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    li {
+      list-style-type: none;
+      margin-right: 40px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        color: $grey-color;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+        transition: .4s linear all;
+        &:hover {
+          color: $red-color;
+        }
+      }
+    }
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    &-item {
+      margin-right: 30px;
+      color: $black-color;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: .4s linear all;
+      &:hover {
+        color: $red-color;
+      }
+    }
+  }
+  
+}

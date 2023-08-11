@@ -1,0 +1,25 @@
+{
+  "name": "testwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "M. Paziuka",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-gfonts": "^0.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.63.6",
+    "swiper": "^10.0.4"
+  },
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}

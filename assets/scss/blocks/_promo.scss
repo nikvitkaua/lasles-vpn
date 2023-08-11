@@ -1,0 +1,41 @@
+.promo {
+  padding-top: 45px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    margin-right: 40px;
+    max-width: 555px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    margin-bottom: 50px;
+  }
+  &__btn {
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background: $red-color;
+    color: $white-color;
+    transition: .4s linear all;
+    &:hover {
+      background: $white-color;
+      border: 1px solid $red-color;
+      color: $red-color;
+      &:after {
+        max-width: 0;
+        visibility: hidden;
+      }
+    }
+  }
+  &__img {
+    max-width: 545px;
+    img {
+      width: 100%;
+    }
+  }
+}

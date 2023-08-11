@@ -1,0 +1,70 @@
+.plan {
+  padding-top: 80px;
+  background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0.00) 100%);
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__text {
+    max-width: 555px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    position: relative;
+    padding: 80px 0 50px 0;
+    width: 330px;
+    height: 760px;
+    border-radius: 10px;
+    border: 2px solid #DDD;
+    background: $white-color;
+    cursor: pointer;
+    &-img, &-title {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    &-list {
+      padding-left: 70px;
+      li {
+        position: relative;
+        padding-left: 44px;
+        list-style-type: none;
+        margin-bottom: 10px;
+        &:before {
+          @include plan-check;
+        }
+      }
+    }
+    &-footer {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 50px;
+    }
+    &-price {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    &-btn {
+      width: 180px;
+      border: 2px solid $red-color;
+      font-weight: 700;
+    }
+    &--active {
+      border-color: $red-color;
+      .plan__item-btn {
+        background-color: $red-color;
+        color: $white-color;
+        &:hover {
+          background-color: $white-color;
+          color: $red-color;
+        }
+      }
+    }
+  }
+}

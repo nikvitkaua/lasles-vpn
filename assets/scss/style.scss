@@ -1,0 +1,40 @@
+@import "basis/variables";
+@import "basis/mixins";
+@import "basis/fonts";
+@import "basis/buttons";
+@import "basis/titles";
+@import "basis/text";
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+}
+
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/numbers";
+@import "blocks/features";
+@import "blocks/plans";
+@import "blocks/map";
+@import "blocks/sponsors";
+@import "blocks/testimonials";
+@import "blocks/prefooter";
+@import "blocks/footer";
+
+@import "../../node_modules/swiper/swiper-bundle.min.css";

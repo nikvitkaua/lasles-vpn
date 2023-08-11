@@ -1,0 +1,40 @@
+.features {
+  padding: 95px 0 130px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__img {
+    max-width: 505px;
+    margin-right: 170px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    max-width: 430px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+  &__list {
+    &-item {
+      position: relative;
+      padding-left: 34px;
+      color: $grey-color;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+      list-style-type: none;
+      margin-bottom: 10px;
+      &:before {
+        @include list-checked;
+      }
+    }
+  }
+}

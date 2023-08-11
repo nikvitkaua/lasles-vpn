@@ -1,0 +1,36 @@
+@mixin btn-shadow {
+  content: '';
+  max-width: 100%;
+  transition: .4s all linear;
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  width: 210px;
+  height: 60px;
+  border-radius: 10px;
+  background: rgba(245, 56, 56, 0.35);
+  filter: blur(27px);
+}
+
+
+@mixin list-checked {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  background: url('../icons/list-checked.svg') center center / cover no-repeat;
+}
+
+@mixin plan-check {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  background: url('../icons/plan-check.svg') center center / cover no-repeat;
+}
